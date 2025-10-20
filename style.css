@@ -1,0 +1,80 @@
+html {
+  font-size: 24px;
+  font-family: "VT323", sans-serif;
+  background-color: #000000
+}
+
+h1 {
+  font-size: 36px;
+  color: white;
+  margin: 1 auto;
+  text-align: center;
+  font-family: "VT323", sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-family: "VT323";
+}
+
+h5 {
+  
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-family: "VT323";
+  background-image: 
+    linear-gradient(90deg,
+      yellow 0%, orange 15%, red 30%, purple 44%, blue 58%, cyan 72%, lime 86%, yellow 100%);
+  background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+h3 {
+  font-size: 36px;
+  color: white;
+  margin: 1 auto;
+  text-align: center;
+  font-family: "VT323", sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-family: "VT323";
+}
+
+p {
+  font-size: 16px;
+  color: red;
+  text-align: center;
+  font-family: "VT323";
+  margin: 0 auto;
+}
+
+p2 {
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  font-family: "VT323";
+  margin: 0 auto;
+  word-spacing: 5px;
+}
+
+img {
+  display: block;
+  margin: 0 auto
+}
+
+hr {
+  color: white;
+}
+
+pre {
+  margin: 0 auto;
+}
+

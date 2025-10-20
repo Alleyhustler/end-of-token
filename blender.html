@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html style="overflow-y: scroll; overflow-y: overlay;">
+  
+<!-- Mirrored from buryevil.neocities.org/blender by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Aug 2025 18:50:27 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝖇𝖑𝖊𝖓𝖉𝖊𝖗</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+  <style type="text/css">
+      
+@font-face {
+  font-family: Minecraftia;
+  src: url(https://yesterwebring.neocities.org/fonts/Minecraftia-Regular.woff);
+}
+@font-face {
+  font-family: Bitmap;
+  src: url(https://sadgrl.online/fonts/ADD.TTF);
+}
+@font-face {
+  font-family: fivepx;
+  src: url(fonts/5z%c3%8c%c2%8c5.html);
+}
+
+  
+  </style>
+  <style>
+
+    
+  /* class for rainbow text */
+  .rainbow {
+  
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 1s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 1s infinite; 
+}
+
+/* class for slow rainbow text */
+  .rainbowslow {
+  
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 3s infinite; 
+}
+
+/* class for fast rainbow text */
+  .rainbowfast {
+  
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 0.5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 0.5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 0.5s infinite; 
+}
+
+/* keyframes for rainbow text */
+@-webkit-keyframes rainbow{
+  0%{color: magenta;}	
+  10%{color: red;}	
+  20%{color: orangered;}
+  30%{color: orange;}
+  40%{color: yellow;}
+  50%{color: #C0FF02;}
+  60%{color: lime;}
+  70%{color: cyan;}
+  80%{color: deepskyblue;}
+  90%{color: #4E48FF;}
+  100%{color: magenta;}
+}
+      
+    ::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #181818; 
+  transition: 0.2s;
+}
+      
+::-webkit-scrollbar-thumb:hover {
+  background: #2E2E2E; 
+}
+      
+::-webkit-scrollbar-corner {
+  background: black; 
+}
+      
+.texture {
+  color: white; 
+  font-size 12px;
+  word-wrap: break-word;   
+  white-space:pre-wrap; 
+  overflow: hidden;
+}
+
+.texture span {
+  display: inline-block;
+  position: relative;
+  animation: texture 2s linear infinite;
+}
+
+.texture span:nth-child(1) {
+  animation-delay: -1.2s;
+}
+.texture span:nth-child(2) {
+  animation-delay: -1.0s;
+}
+.texture span:nth-child(3) {
+  animation-delay: -0.8s;
+}
+.texture span:nth-child(4) {
+  animation-delay: -0.6s;
+}
+.texture span:nth-child(5) {
+  animation-delay: -0.4s;
+}
+      
+.texture span:nth-child(6) {
+  animation-delay: -0.2s;
+}
+.texture span:nth-child(7) {
+  animation-delay: 0s;
+}
+.texture span:nth-child(8) {
+  animation-delay: 0.2s;
+}
+.texture span:nth-child(9) {
+  animation-delay: 0.4s;
+}
+.texture span:nth-child(10) {
+  animation-delay: 0.6s;
+}
+.texture span:nth-child(11) {
+  animation-delay: 0.8s;
+}
+.texture span:nth-child(12) {
+  animation-delay: 1.0s;
+}
+
+@keyframes texture {
+    0%{opacity: 1;}
+    50%{opacity: 0.2;}
+    100%{opacity: 1;}
+}
+
+.menutext {font-family: fivepx; color: white; font-size: 14px; margin: 0px; text-shadow: 1px 1px gray; transition: 0.2s ease;}
+
+.menutext:hover {transform: translate(0, 0); font-size: 16px; z-index: 1; background-color: white; height: 25px; color: black; text-shadow: none;}
+      
+.saturatediv{width: 600px; height: 10px margin: 0 auto; border: 1px solid white; height: 20px; filter: saturate(0%); transition: 0.2s ease;}
+      
+.saturatediv:hover {filter: saturate(100%);}
+      
+.arrow {margin: 0 auto; float: center; position: relative; right: 2px; font-family: minecraftia; font-size: 16px; background-color: black; border: 1px solid white; float: center; color: white; transition: 0.2s ease; height: 20px; width: 20px;}
+
+.arrow:hover {outline: 1px solid white;}
+      
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+      
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+      
+.content {visibility: hidden; opacity: 0;}
+      
+.content.show {
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+      
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+  </style>
+        
+  </head>
+      
+  <body style="margin: 0 auto;" onload="arrow()">
+  
+  <div style="margin: 0 auto; width: 800px; border: none; margin-top: 50px;">
+  
+  <div style="width: 105px; float: left; border: hidden; position: fixed;">
+  
+  <div style="width: 105px; float: center; margin:0 auto; text-align: center; border: 1px solid white;">
+  
+  <h2 style="font-family: fivepx; color: white; text-shadow: 1px 1px gray; font-size: 9px; margin: 4px;">EXPLORE MY LAIR</h2>
+  </div>
+  
+  <div style="width: 105px; float: left; margin-top: 10px; ">  
+      
+  <div style="width: 105px; text-align: center; border: 1px solid white; overflow: hidden; background-image: url(Images/background7.gif); background-size: 26px; image-rendering: pixelated;">
+  
+  <h2 class="menutext"><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></h2>
+  <div style="margin: 0 auto; width: 110px; background-color: white; height: 1px; margin-bottom: -1px"></div>
+  <h2 class="menutext"><a href="about.html" style="color: inherit; text-decoration: none;">About</a></h2>
+  <div style="margin: 0 auto; width: 110px; background-color: white; height: 1px; margin-bottom: -1px"></div>
+
+  <h2 class="menutext"><a href="blender.html" style="color: inherit; text-decoration: none;">Sender </a></h2>
+  <div style="margin: 0 auto; width: 110px; background-color: white; height: 1px; margin-bottom: -1px;"></div>
+  <h2 class="menutext"><a href="shitposts.html" style="color: inherit; text-decoration: none;">??????</a></h2>
+  <div style="margin: 0 auto; width: 110px; background-color: white; height: 1px; margin-bottom: -1px"></div>
+
+  </div>
+      
+  </div>
+      
+  <div style="width: 107px; height: 10px;float: left; background-color: black;; position: relative;"></div>
+      
+  </div>
+      
+      
+  
+  <div style="width: 605px; float: right; border: none; margin: 0 auto; text-align: center; position: relative; top: -4px;">
+      
+      <p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left;">Blender<span style="float: right;">[listed in rev-chronological] - [refresh this page if images don't appear]</span></p>
+      
+      <div class="loader" style="margin: 0 auto; width: 605px; height: 200px; border: none; background-image: url(Images/background5.gif); background-size: 28px; border: 1px solid white; z-index: 5; position: absolute; margin-top: 2px;  display:table">
+    
+    <div style="margin: 0 auto; width: 80px; height: 30px; border: none; background: black; position: relative; top: 80px; border: 1px solid white; ">
+    
+    <p style="font-family: fivepx; color: white; margin: 7px; font-size: 12px;">Loading...</p>
+    
+    </div>
+    
+    </div>
+    
+    <script>
+    
+        window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+    
+    </script>
+      
+      <div class="content" >
+          
+          
+      <script>
+    
+        window.addEventListener("load", function () {
+    const content = document.querySelector(".content");
+    content.className += " show"; 
+});
+    
+    </script>
+      
+      <div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden; margin-top: 2px; background-image: url(Images/background5.gif); background-size: 28px;">
+          
+      <div style="margin: 0 auto; position: absolute; z-index: 0; overflow: hidden; width: 700px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index: 1; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >27 Messidor an CCXXX ( 15 7 MMXXI ) Low Poly Model Test</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px; z-index: 1;"><button class="arrow" onclick="arrow(), appear(), opacity()" id="arrow"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+        
+    <div id="artbox" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; height: 460px; opacity: 1; margin-bottom: 2px; overflow-y: scroll; overflow-y: overlay;">
+      
+     <div style="margin: 0 auto; width: 580px; height: 300px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <div style="margin: 0 auto; width: 500px; border: 2px hidden white; height: 400px; position: relative; margin-top: 8px;">
+        
+            <a href="Images/lowpolymodeltest.png"><img loading="lazy" src="Images/lowpolymodeltest.png" height="400px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: center;"/></a>
+            
+            
+        </div>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow() {
+  var x = document.getElementById("arrow");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear() {
+  var x = document.getElementById("artbox");
+  if (x.style.height === "0px") {
+    x.style.height = "460px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity() {
+  var x = document.getElementById("artbox");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+          
+<div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >9 Vendémiaire an CCXXX ( 30 9 MMXXI ) MEOWCORP - Worldly Simulation</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow10(), appear10(), opacity10()" id="arrow10"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox10" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay; ">
+        
+    <div style="margin: 0 auto; width: 580px; height: 300px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <iframe loading="lazy" src="https://www.youtube.com/embed/Dhkk_eIdx3I?start=0&amp;color=white" width="550" height="300" style="margin-top: 30px;" frameborder="0"></iframe>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow10() {
+  var x = document.getElementById("arrow10");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear10() {
+  var x = document.getElementById("artbox10");
+  if (x.style.height === "0px") {
+    x.style.height = "360px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity10() {
+  var x = document.getElementById("artbox10");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+          
+<div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >28 Thermidor an CCXXIX ( 15 8 MMXXI ) VECTOR FALLS</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow9(), appear9(), opacity9()" id="arrow9"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox9" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay; ">
+        
+    <div style="margin: 0 auto; width: 580px; height: 300px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <iframe loading="lazy" src="https://www.youtube.com/embed/g_oaIEwvWAw?start=0&amp;color=white" width="550" height="300" style="margin-top: 30px;" frameborder="0"></iframe>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow9() {
+  var x = document.getElementById("arrow9");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear9() {
+  var x = document.getElementById("artbox9");
+  if (x.style.height === "0px") {
+    x.style.height = "360px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity9() {
+  var x = document.getElementById("artbox9");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+          
+<div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >24 Thermidor an CCXXIX ( 11 8 MMXXI ) DIGITAL MIST (test)</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow8(), appear8(), opacity8()" id="arrow8"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox8" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay; ">
+        
+    <div style="margin: 0 auto; width: 580px; height: 300px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <iframe loading="lazy" src="https://www.youtube.com/embed/WT-720pqDCc?start=0&amp;color=white" width="550" height="300" style="margin-top: 30px;" frameborder="0"></iframe>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow8() {
+  var x = document.getElementById("arrow8");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear8() {
+  var x = document.getElementById("artbox8");
+  if (x.style.height === "0px") {
+    x.style.height = "360px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity8() {
+  var x = document.getElementById("artbox8");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+          
+<div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >20 Thermidor an CCXXIX ( 7 8 MMXXI ) OLD PROJECT REDUX</p></div>
+    
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow7(), appear7(), opacity7()" id="arrow7"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox7" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay; ">
+        
+    <div style="margin: 0 auto; width: 580px; height: 300px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <div style="margin: 0 auto; width: 500px; border: 2px hidden white; height: 400px; position: relative; margin-top: 8px;">
+        
+            <a href="Images/prairieupdated.jpg"><img loading="lazy" src="Images/prairieupdated.jpg" height="400px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: center;"/></a>
+            
+            
+        </div>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow7() {
+  var x = document.getElementById("arrow7");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear7() {
+  var x = document.getElementById("artbox7");
+  if (x.style.height === "0px") {
+    x.style.height = "460px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity7() {
+  var x = document.getElementById("artbox7");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+      
+<div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >6 Thermidor an CCXXIX ( 24 7 MMXXI )</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow6(), appear6(), opacity6()" id="arrow6"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox6" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay; ">
+        
+    <div style="margin: 0 auto; width: 580px; height: 300px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <div style="margin: 0 auto; width: 500px; border: 2px hidden white; height: 400px; position: relative; margin-top: 8px;">
+        
+            <a href="Images/tubes.jpg"><img loading="lazy" src="Images/tubes.jpg" height="400px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: center;"/></a>
+            
+            
+        </div>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow6() {
+  var x = document.getElementById("arrow6");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear6() {
+  var x = document.getElementById("artbox6");
+  if (x.style.height === "0px") {
+    x.style.height = "460px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity6() {
+  var x = document.getElementById("artbox6");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+      
+<div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >28 Messidor an CCXXIX ( 16 7 MMXXI ) PLAYSTATION GRAPHICS</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow4(), appear4(), opacity4()" id="arrow4"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox4" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay;">
+        
+    <div style="margin: 0 auto; width: 580px; height: 300px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <div style="margin: 0 auto; width: 500px; border: 2px hidden white; height: 300px; position: relative; margin-top: 8px;">
+        
+            <a href="Images/room.jpg"><img loading="lazy" src="Images/room.jpg" height="300px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: left;;"/></a>
+            
+            <a href="Images/room.gif"><img loading="lazy" src="Images/room.gif" height="300px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: right;"/></a>
+            
+            
+        </div>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow4() {
+  var x = document.getElementById("arrow4");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear4() {
+  var x = document.getElementById("artbox4");
+  if (x.style.height === "0px") {
+    x.style.height = "360px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity4() {
+  var x = document.getElementById("artbox4");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+      
+<div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >21 Ventôse an CCXXIX ( 11 3 MMXXI ) PLAYSTATION GRAPHICS</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow5(), appear5(), opacity5()" id="arrow5"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox5" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay;">
+        
+    <div style="margin: 0 auto; width: 580px; height: 330px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <div style="margin: 0 auto; width: 500px; border: 2px hidden white; height: 400px; position: relative; margin-top: 8px;">
+        
+            <a href="Images/street1.jpg"><img loading="lazy" src="Images/street1.jpg" height="400px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: left;;"/></a>
+            
+            <a href="Images/street2.jpg"><img loading="lazy" src="Images/street2.jpg" height="400px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: right;"/></a>
+            
+            
+        </div>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow5() {
+  var x = document.getElementById("arrow5");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear5() {
+  var x = document.getElementById("artbox5");
+  if (x.style.height === "0px") {
+    x.style.height = "460px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity5() {
+  var x = document.getElementById("artbox5");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+      
+    <div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden margin-top: 2px; z-index: 1; position: relative; background-image: url(Images/background5.gif); background-size: 28px;"> 
+          
+      <div style="margin: 0 auto; position: absolute; z-index: -1; overflow: hidden; width: 610px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >1 Ventôse an CCXXIX ( 18 2 MMXXI ) PLAYSTATION GRAPHICS</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow2(), appear2(), opacity2()" id="arrow2"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+    <div id="artbox2" style="margin: 0 auto; width: 605px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; margin-bottom: 2px; height: 0px; opacity: 0; overflow-y: scroll; overflow-y: overlay;">
+        
+    <div style="margin: 0 auto; width: 580px; height: 330px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <div style="margin: 0 auto; width: 540px; border: 2px hidden white; height: 400px; position: relative;">
+        
+            <a href="Images/traintracks1.gif"><img loading="lazy" src="Images/traintracks1.gif" height="420px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: center;"/></a>
+            
+            
+        </div>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow2() {
+  var x = document.getElementById("arrow2");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear2() {
+  var x = document.getElementById("artbox2");
+  if (x.style.height === "0px") {
+    x.style.height = "460px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity2() {
+  var x = document.getElementById("artbox2");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+      
+      
+    <div style="margin: 0 auto; border: 1px solid white; width: 605px; margin-bottom: 2px; overflow-x: none; overflow-y: none; overflow: hidden; margin-top: 2px; background-image: url(Images/background5.gif); background-size: 28px;">
+          
+      <div style="margin: 0 auto; position: absolute; z-index: 0; overflow: hidden; width: 700px; height: 31px;">
+          
+          <div style="margin: 0 auto; border: 1px solid white; height: 20px; position: absolute; z-index:3; background-color: black; top: 4px; margin-left: 30px;"><p style="font-family: fivepx; color: white; font-size: 12px; word-wrap: break-word; white-space:pre-wrap; text-shadow: 1px 1px gray; text-align: left; position: relative; left: 6px; top: 2px; margin-right: 11px;" >11 Thermidor an CCXXVIII ( 28 7 MMXX )</p></div>
+      
+   </div>
+    
+          <p style="margin: 5px; font-size: 12px; width: 24px; height: 20px;"><button class="arrow" onclick="arrow3(), appear3(), opacity3()" id="arrow3"><span style="position: relative; right: 2px;">^</span></button></p>
+        
+    </div>
+      
+  <div id="artbox3" style="margin: 0 auto; width: 565px; border: 1px solid white; transition: 0.2s ease; overflow-y: auto; height: 0px; opacity: 0; padding: 20px; margin-bottom: 50px;">
+      
+  <div style="margin: 0 auto; width: 580px; height: 330px; border: 1px hidden white; margin-bottom: 50px;">
+    
+        <div style="margin: 0 auto; width: 540px; border: 2px hidden white; height: 400px; position: relative; margin-top: -10px;">
+        
+            <a href="Images/prairie1.jpg"><img loading="lazy" src="Images/prairie1.jpg" height="420px" style="z-index: 0; border: 1px solid white; transform: rotate(0deg); position: relative; top: 20px; float: center;"/></a>
+            
+            
+        </div>
+        
+    </div>
+        
+    </div>
+    
+    <script>
+    
+    function arrow3() {
+  var x = document.getElementById("arrow3");
+  if (x.style.transform === "rotate(180deg)") {
+    x.style.transform = "rotate(0deg)";
+  } else {
+    x.style.transform = "rotate(180deg)";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function appear3() {
+  var x = document.getElementById("artbox3");
+  if (x.style.height === "0px") {
+    x.style.height = "440px";
+  } else {
+    x.style.height = "0px";
+  }
+}
+    
+</script>
+    
+    <script>
+    
+    function opacity3() {
+  var x = document.getElementById("artbox3");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  } else {
+    x.style.opacity = "0";
+  }
+}
+    
+    </script>
+
+  </div>
+      
+  </div>
+  
+  </div>
+      
+  </body>
+
+<!-- Mirrored from buryevil.neocities.org/blender by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Aug 2025 18:50:29 GMT -->
+</html>
